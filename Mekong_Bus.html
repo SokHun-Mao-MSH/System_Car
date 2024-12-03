@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mekong_Bus</title>
+    <link rel="stylesheet" href="/CSS/list -view.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <a
+          class="navbar-brand"
+          href="#"
+          style="
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+              'Lucida Sans', Arial, sans-serif;
+            font-size: 50px;
+          "
+          >Car Booking</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="dasdbord.html">Details</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Vet_Bus.html">VET Bus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Larryta_Bus.html">Larryta Bus</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="Mekong_Bus.html"
+                >Mekong Bus</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-primary" href="index.html">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Filter -->
+    <div class="container">
+      <div class="row justify-content-end">
+        <div class="col-lg-4">
+          <div class="booking-form">
+            <h2 class="mb-4 text-center">Find The Trip</h2>
+            <form>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="pickup-location" class="form-label"
+                    >Pick-Up Location</label
+                  >
+                  <input
+                    type="text"
+                    id="pickup-location"
+                    class="form-control"
+                    placeholder="Enter pick-up location"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="dropoff-location" class="form-label"
+                    >Drop-Off Location</label
+                  >
+                  <input
+                    type="text"
+                    id="dropoff-location"
+                    class="form-control"
+                    placeholder="Enter drop-off location"
+                  />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="pickup-date" class="form-label"
+                    >Pick-Up Date</label
+                  >
+                  <input type="date" id="pickup-date" class="form-control" />
+                </div>
+                <div class="col-md-6">
+                  <label for="pickup-time" class="form-label"
+                    >Pick-Up Time</label
+                  >
+                  <input type="time" id="pickup-time" class="form-control" />
+                </div>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Find Trip</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Table Data Mekong Bus -->
+    <div class="table-container">
+      <h2 class="text-center">Recorded Bookings</h2>
+      <table class="table table-bordered table-hover">
+        <thead class="table-dark">
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Phone Number</th>
+            <th>Pick-Up Location</th>
+            <th>Drop-Off Location</th>
+            <th>Pick-Up Date</th>
+            <th>Pick-Up Time</th>
+            <th>Return Date</th>
+            <th>Return Time</th>
+            <th>Car Type</th>
+            <th>Passengers</th>
+            <th>Edit & Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Chakriya Chhim</td>
+            <td>+85533445566</td>
+            <td>Phnom Penh</td>
+            <td>Preah Vihear</td>
+            <td>2024-12-01</td>
+            <td>08:30</td>
+            <td>2024-12-03</td>
+            <td>18:00</td>
+            <td>Sedan</td>
+            <td>3</td>
+            <td>
+              <a href="Edit_form.html" class="btn btn-primary">Edit Data</a>
+              <a href="" class="btn btn-primary">Delete Data</a>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Meas Touch</td>
+            <td>+85566778899</td>
+            <td>Siem Reap</td>
+            <td>Angkor Wat</td>
+            <td>2024-12-02</td>
+            <td>10:30</td>
+            <td>2024-12-05</td>
+            <td>19:00</td>
+            <td>Van</td>
+            <td>5</td>
+            <td>
+              <a href="Edit_form.html" class="btn btn-primary">Edit Data</a>
+              <a href="" class="btn btn-primary">Delete Data</a>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Vannara Sok</td>
+            <td>+85522334477</td>
+            <td>Phnom Penh</td>
+            <td>Siem Reap</td>
+            <td>2024-12-03</td>
+            <td>14:00</td>
+            <td>2024-12-06</td>
+            <td>16:30</td>
+            <td>SUV</td>
+            <td>4</td>
+            <td>
+              <a href="Edit_form.html" class="btn btn-primary">Edit Data</a>
+              <a href="" class="btn btn-primary">Delete Data</a>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Serey Leak</td>
+            <td>+85544332288</td>
+            <td>Kampong Cham</td>
+            <td>Preah Sihanouk</td>
+            <td>2024-12-04</td>
+            <td>10:00</td>
+            <td>2024-12-07</td>
+            <td>21:30</td>
+            <td>Luxury</td>
+            <td>2</td>
+            <td>
+              <a href="Edit_form.html" class="btn btn-primary">Edit Data</a>
+              <a href="" class="btn btn-primary">Delete Data</a>
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Vanna Kim</td>
+            <td>+85555667799</td>
+            <td>Phnom Penh</td>
+            <td>Shihanoukville</td>
+            <td>2024-12-05</td>
+            <td>12:00</td>
+            <td>2024-12-08</td>
+            <td>22:00</td>
+            <td>Sedan</td>
+            <td>3</td>
+            <td>
+              <a href="Edit_form.html" class="btn btn-primary">Edit Data</a>
+              <a href="" class="btn btn-primary">Delete Data</a>
+            </td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Chivorn Sovath</td>
+            <td>+85566778822</td>
+            <td>Siem Reap</td>
+            <td>Preah Vihear</td>
+            <td>2024-12-06</td>
+            <td>08:00</td>
+            <td>2024-12-09</td>
+            <td>20:30</td>
+            <td>Van</td>
+            <td>5</td>
+            <td>
+              <a href="Edit_form.html" class="btn btn-primary">Edit Data</a>
+              <a href="" class="btn btn-primary">Delete Data</a>
+            </td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Keo Thyda</td>
+            <td>+85577889933</td>
+            <td>Sihanouk</td>
+            <td>Phnom Penh</td>
+            <td>2024-12-07</td>
+            <td>16:00</td>
+            <td>2024-12-10</td>
+            <td>18:00</td>
+            <td>SUV</td>
+            <td>4</td>
+            <td>
+              <a href="Edit_form.html" class="btn btn-primary">Edit Data</a>
+              <a href="" class="btn btn-primary">Delete Data</a>
+            </td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Vannara Khem</td>
+            <td>+85588990044</td>
+            <td>Kampot</td>
+            <td>Preah Vihear</td>
+            <td>2024-12-08</td>
+            <td>17:30</td>
+            <td>2024-12-11</td>
+            <td>19:30</td>
+            <td>Luxury</td>
+            <td>3</td>
+            <td>
+              <a href="Edit_form.html" class="btn btn-primary">Edit Data</a>
+              <a href="" class="btn btn-primary">Delete Data</a>
+            </td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Sang Vanna</td>
+            <td>+85599001122</td>
+            <td>Phnom Penh</td>
+            <td>Koh Kong</td>
+            <td>2024-12-09</td>
+            <td>14:00</td>
+            <td>2024-12-12</td>
+            <td>21:00</td>
+            <td>Sedan</td>
+            <td>2</td>
+            <td>
+              <a href="Edit_form.html" class="btn btn-primary">Edit Data</a>
+              <a href="" class="btn btn-primary">Delete Data</a>
+            </td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Heng Dara</td>
+            <td>+85512398877</td>
+            <td>Battambang</td>
+            <td>Phnom Penh</td>
+            <td>2024-12-10</td>
+            <td>13:00</td>
+            <td>2024-12-13</td>
+            <td>22:30</td>
+            <td>SUV</td>
+            <td>6</td>
+            <td>
+              <a href="Edit_form.html" class="btn btn-primary">Edit Data</a>
+              <a href="" class="btn btn-primary">Delete Data</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="dasdbord.html" class="btn btn-primary">Back</a>
+    </div>
+  </body>
+</html>
